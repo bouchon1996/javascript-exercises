@@ -1,4 +1,7 @@
 const sumAll = function(intOne, intTwo) {
+    if (!Number.isInteger(intOne) || !Number.isInteger(intTwo)) return "ERROR";
+    if (intOne < 0 || intTwo < 0) return "ERROR"
+    
     let sum = 0;
     if (intTwo < intOne) {
         for (let i = intTwo; i < (intOne + 1); i++) {
